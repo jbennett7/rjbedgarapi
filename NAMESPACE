@@ -1,2 +1,3 @@
 export(getSubmissions)
+export(setUserAgent)
 importFrom(rjson, newJSONParser)
