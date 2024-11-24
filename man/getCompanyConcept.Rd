@@ -4,7 +4,7 @@
 \alias{getCompanyConcept}
 \title{Using the EDGAR API, download a list of submissions by this company.}
 \usage{
-getCompanyConcept(cik)
+getCompanyConcept(cik, concept)
 }
 \arguments{
 \item{cik}{the cik number of the firm.}

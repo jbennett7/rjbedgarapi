@@ -5,7 +5,7 @@
 #' getCompanyConcept takes the cik of the firm as an input parameter and provides
 #' information about the reports submitted to EDGAR by the firm.
 #'
-#' @usage getCompanyConcept(cik)
+#' @usage getCompanyConcept(cik, concept)
 #'
 #' @param cik the cik number of the firm.
 #'
@@ -21,7 +21,7 @@
 getCompanyConcept <- function(cik, concept) {
   cik <- cik.to.10(cik)
   edgar.url <- paste0('https://data.sec.gov/api/xbrl/companyconcept/CIK',
-                      cik, concept, '.json')
+                      cik, '/', concept, '.json')
   edgar.json <- readLines(edgar.url, warn=F)
   parser <- newJSONParser()
   parser$addData(edgar.json)
