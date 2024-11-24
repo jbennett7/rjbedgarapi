@@ -1,3 +1,4 @@
 export(getSubmissions)
+export(getCompanyConcept)
 export(setUserAgent)
 importFrom(rjson, newJSONParser)
