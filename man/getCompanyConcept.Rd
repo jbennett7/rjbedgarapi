@@ -23,6 +23,6 @@ information about the reports submitted to EDGAR by the firm.
 }
 \examples{
 \dontrun{
-  pltr.df <- getCompanyConcept(1321655, 'us-gaap/tag')
+  pltr.df <- getCompanyConcept(1321655, 'us-gaap/AssetsCurrent')
 }
 }

@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' \dontrun{
-#'   pltr.df <- getCompanyConcept(1321655, 'us-gaap/tag')
+#'   pltr.df <- getCompanyConcept(1321655, 'us-gaap/AssetsCurrent')
 #'}
 
 getCompanyConcept <- function(cik, concept) {
